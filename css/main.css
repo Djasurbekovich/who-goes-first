@@ -49,6 +49,10 @@ body {
   margin: 0 10px;
 }
 
+.input:focus {
+  box-shadow: 1px 1px 10px;
+}
+
 .btn {
   width: 300px;
   height: 40px;
@@ -62,14 +66,12 @@ body {
 }
 
 .btn:hover {
-  color: limegreen;
-  background-color: white;
-  border: 2px solid limegreen;
+  background-color: green;
   cursor: pointer;
 }
 
 .btn:active {
-  box-shadow: 1px 1px 10px rgb(0, 250, 0);
+  box-shadow: 1px 1px 10px green;
 }
 
 .list {
@@ -117,6 +119,16 @@ span {
   text-align: center;
   color: red;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .form {
+    width: 100%;
+    padding: 15px;
+  }
+  .input {
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
